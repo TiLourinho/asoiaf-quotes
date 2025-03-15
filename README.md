@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/images/logo.png" alt="A Song of Ice and Fire brand logo" width="700px" />
+  <img src="./public/images/asoiaf-logo.png" alt="A Song of Ice and Fire brand logo" width="700px" />
 </p>
 
 # A Song of Ice and Fire Quotes

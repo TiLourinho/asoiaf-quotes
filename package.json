@@ -1,0 +1,31 @@
+{
+  "name": "asoiaf-quotes",
+  "version": "1.0.0",
+  "description": "A simple quotes API for the 'A Song of Ice and Fire' book series.",
+  "main": ".src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiLourinho/asoiaf-quotes.git"
+  },
+  "keywords": [
+    "javascript",
+    "node.js",
+    "express",
+    "api"
+  ],
+  "author": "Tiago Lourinho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TiLourinho/asoiaf-quotes/issues"
+  },
+  "homepage": "https://github.com/TiLourinho/asoiaf-quotes#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "http-status-codes": "^2.3.0"
+  }
+}
