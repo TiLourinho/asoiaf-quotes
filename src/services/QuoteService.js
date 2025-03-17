@@ -9,3 +9,13 @@ export function getRandom() {
 
   return quote;
 }
+
+export function getById(id) {
+  const quote = QuoteModel.getById(id);
+
+  if (!quote) {
+    throw new Error("Error fetching quote. Please try again later.");
+  }
+
+  return quote;
+}
