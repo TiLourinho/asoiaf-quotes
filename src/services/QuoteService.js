@@ -19,3 +19,13 @@ export function getById(id) {
 
   return quote;
 }
+
+export function getByCharacter(character) {
+  const quote = QuoteModel.getByCharacter(character);
+
+  if (!quote) {
+    throw new Error("Error fetching quote. Please try again later.");
+  }
+
+  return quote;
+}

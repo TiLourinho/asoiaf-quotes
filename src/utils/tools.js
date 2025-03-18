@@ -11,3 +11,19 @@ export function readQuotes() {
   const quotes = readFileSync(QUOTES_PATH, "utf-8");
   return JSON.parse(quotes);
 }
+
+export function getQuotes() {
+  const quotes = readQuotes();
+
+  if (!quotes || quotes.length === 0) {
+    throw new Error("No quotes available.");
+  }
+
+  return quotes;
+}
+
+export function getRandomNumber(limit) {
+  const randomNumber = Math.random() * limit.length;
+
+  return Math.floor(randomNumber);
+}

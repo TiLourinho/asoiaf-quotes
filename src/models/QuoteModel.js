@@ -1,23 +1,13 @@
-import { readQuotes } from "../utils/tools.js";
+import { getQuotes, getRandomNumber } from "../utils/tools.js";
 
 export function getRandom() {
-  const quotes = readQuotes();
+  const quotes = getQuotes();
 
-  if (!quotes || quotes.length === 0) {
-    throw new Error("No quotes available.");
-  }
-
-  const randomNumber = Math.floor(Math.random() * quotes.length);
-  return quotes[randomNumber];
+  return quotes[getRandomNumber(quotes)];
 }
 
 export function getById(id) {
-  const quotes = readQuotes();
-
-  if (!quotes || quotes.length === 0) {
-    throw new Error("No quotes available.");
-  }
-
+  const quotes = getQuotes();
   const findById = quotes.find((quote) => quote.id === id);
 
   if (!findById) {
@@ -25,4 +15,17 @@ export function getById(id) {
   }
 
   return findById;
+}
+
+export function getByCharacter(character) {
+  const quotes = getQuotes();
+  const findByCharacter = quotes.filter(
+    (quote) => quote.character === character
+  );
+
+  if (!findByCharacter) {
+    throw new Error("Quote not found!");
+  }
+
+  return findByCharacter[getRandomNumber(findByCharacter)];
 }

@@ -28,3 +28,18 @@ export function getById(req, res) {
     return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(error);
   }
 }
+
+export function getByCharacter(req, res) {
+  const { character } = req.query;
+
+  try {
+    const quote = QuoteService.getByCharacter(character);
+
+    return res.status(StatusCodes.OK).json(quote);
+  } catch ({ message }) {
+    const error = { error: message };
+
+    console.error(`Error in getByCharacter => ${message}`);
+    return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(error);
+  }
+}
