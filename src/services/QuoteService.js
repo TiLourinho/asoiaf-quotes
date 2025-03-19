@@ -29,3 +29,13 @@ export function getByCharacter(character) {
 
   return quote;
 }
+
+export function create(quote) {
+  const newQuote = QuoteModel.create(quote);
+
+  if (!newQuote) {
+    throw new Error("Error writing quote. Please try again later.");
+  }
+
+  return newQuote;
+}

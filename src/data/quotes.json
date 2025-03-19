@@ -23,5 +23,35 @@
     "id": 5,
     "character": "Catelyn Stark",
     "quote": "He was always clever, even as a boy, but it is one thing to be clever and another to be wise."
+  },
+  {
+    "id": 6,
+    "character": "Tyrion Lannister",
+    "quote": "Let them see that their words can cut you, and you'll never be free of the mockery. If they want to give you a name, take it, make it your own. Then they can't hurt you with it anymore."
+  },
+  {
+    "id": 7,
+    "character": "Eddard Stark",
+    "quote": "Know the men who follow you, and let them know you. Don't ask your men to die for a stranger."
+  },
+  {
+    "id": 8,
+    "character": "Robert Baratheon",
+    "quote": "I swear to you, I was never so alive as when I was winning this throne, or so dead as now that I've won it."
+  },
+  {
+    "id": 9,
+    "character": "Cersei Lannister",
+    "quote": "When you play the game of thrones, you win or you die. There is no middle ground."
+  },
+  {
+    "id": 10,
+    "character": "Petyr Baelish",
+    "quote": "You wear your honor like a suit of armor, Stark. You think it keeps you safe, but all it does is weigh you down and make it hard for you to move."
+  },
+  {
+    "id": 11,
+    "character": "Kevan Lannister",
+    "quote": "A man who fights for coin is loyal only to his purse."
   }
 ]

@@ -1,4 +1,4 @@
-import { readFileSync } from "fs";
+import { readFileSync, writeFileSync } from "fs";
 
 import { QUOTES_PATH } from "../config/constants.js";
 
@@ -26,4 +26,12 @@ export function getRandomNumber(limit) {
   const randomNumber = Math.random() * limit.length;
 
   return Math.floor(randomNumber);
+}
+
+export function saveQuotes(quote) {
+  const allQuotes = readQuotes();
+  const data = [...allQuotes, quote];
+  const stringfiedData = JSON.stringify(data, null, 2);
+
+  writeFileSync(QUOTES_PATH, stringfiedData);
 }

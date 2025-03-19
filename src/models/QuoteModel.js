@@ -1,4 +1,9 @@
-import { getQuotes, getRandomNumber } from "../utils/tools.js";
+import {
+  readQuotes,
+  getQuotes,
+  getRandomNumber,
+  saveQuotes,
+} from "../utils/tools.js";
 
 export function getRandom() {
   const quotes = getQuotes();
@@ -28,4 +33,17 @@ export function getByCharacter(character) {
   }
 
   return findByCharacter[getRandomNumber(findByCharacter)];
+}
+
+export function create({ character, quote }) {
+  const id = readQuotes().length + 1;
+  const newQuote = { id, character, quote };
+
+  try {
+    saveQuotes(newQuote);
+
+    return newQuote;
+  } catch ({ message }) {
+    console.error(`Error trying to create a quote => ${message}`);
+  }
 }

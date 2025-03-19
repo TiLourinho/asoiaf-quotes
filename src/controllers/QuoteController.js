@@ -43,3 +43,18 @@ export function getByCharacter(req, res) {
     return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(error);
   }
 }
+
+export function create(req, res) {
+  const quote = req.body;
+
+  try {
+    const newQuote = QuoteService.create(quote);
+
+    return res.status(StatusCodes.CREATED).json(newQuote);
+  } catch ({ message }) {
+    const error = { error: message };
+
+    console.error(`Error in create => ${message}`);
+    return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(error);
+  }
+}
