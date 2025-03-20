@@ -53,5 +53,150 @@
     "id": 11,
     "character": "Kevan Lannister",
     "quote": "A man who fights for coin is loyal only to his purse."
+  },
+  {
+    "id": 12,
+    "character": "Tyrion Lannister",
+    "quote": "Schemes are like fruit, they require a certain ripening."
+  },
+  {
+    "id": 13,
+    "character": "Shae",
+    "quote": "Only cowards kill the vanquished."
+  },
+  {
+    "id": 14,
+    "character": "Jon Snow",
+    "quote": "There's no shame in fear, my father told me, what matters is how we face it."
+  },
+  {
+    "id": 15,
+    "character": "Varys",
+    "quote": "If it is the swordsmen who rule us in truth, why do we pretend kings have the power?"
+  },
+  {
+    "id": 16,
+    "character": "Salladhor Saan",
+    "quote": "What good is this, I ask you? He who hurries through life hurries to his grave."
+  },
+  {
+    "id": 17,
+    "character": "Stannis Baratheon",
+    "quote": "A frightened man is a beaten man."
+  },
+  {
+    "id": 18,
+    "character": "Tyrion Lannister",
+    "quote": "When you tear out a man's tongue, you are not proving him a liar, you're only telling the world that you fear what he might say."
+  },
+  {
+    "id": 19,
+    "character": "Tyrion Lannister",
+    "quote": "If I could pray with my cock I'd be a lot more religious."
+  },
+  {
+    "id": 20,
+    "character": "Sandor Clegane",
+    "quote": "Paint stripes on a toad, he does not become a tiger."
+  },
+  {
+    "id": 21,
+    "character": "Robb Stark",
+    "quote": "When there are no battles to fight, men start to think of hearth and harvest."
+  },
+  {
+    "id": 22,
+    "character": "Stannis Baratheon",
+    "quote": "If you step in a nest of snakes, does it matter which one bites you first?"
+  },
+  {
+    "id": 23,
+    "character": "Tyrion Lannister",
+    "quote": "Sorcery is the sauce fools spoon over failure to hide the flavor of their own incompetence."
+  },
+  {
+    "id": 24,
+    "character": "Meera Reed",
+    "quote": "Why would the gods send a warning if we can't heed it and change what's to come?"
+  },
+  {
+    "id": 25,
+    "character": "Brienne of Tarth",
+    "quote": "The gods don't care about men, no more than kings care about peasants."
+  },
+  {
+    "id": 26,
+    "character": "Davos",
+    "quote": "When I was smuggling, I learned that some men believe everything, and some nothing."
+  },
+  {
+    "id": 27,
+    "character": "Melisandre",
+    "quote": "There are no shadows in the dark. Shadows are the servants of light, the children of fire. The brightest flame casts the darkest shadows."
+  },
+  {
+    "id": 28,
+    "character": "Tyrion Lannister",
+    "quote": "I believe in steel swords, gold coins and men's wits."
+  },
+  {
+    "id": 29,
+    "character": "Catelyn Stark",
+    "quote": "Children are a battle of a different sort ... A battle without banners or warhorns, but no less fierce ... As hard as birth can be, what comes after is even harder."
+  },
+  {
+    "id": 30,
+    "character": "Maester Luwin",
+    "quote": "Cruel lands breed cruel peoples."
+  },
+  {
+    "id": 31,
+    "character": "Arya Stark",
+    "quote": "Listen with your ears, not your mouth."
+  },
+  {
+    "id": 32,
+    "character": "Bronn",
+    "quote": "They'll kill for that knighthood, but don't think they'll ever die for it."
+  },
+  {
+    "id": 33,
+    "character": "Theon Greyjoy",
+    "quote": "It is better to be seen as cruel than foolish."
+  },
+  {
+    "id": 34,
+    "character": "Sandor Clegane",
+    "quote": "A dog doesn't need courage to chase off rats... What do you think a knight is for, girl? You think it's all taking favors from ladies and looking fine in gold plate? Knights are for killing."
+  },
+  {
+    "id": 35,
+    "character": "Cersei Lannister",
+    "quote": "A woman's life is nine parts mess to one part magic ... and the parts that look like magic often turn out to be the messiest of all."
+  },
+  {
+    "id": 36,
+    "character": "Tyrion Lannister",
+    "quote": "Men fight more fiercely for a king who shares their peril than one who hides behind his mother's skirts."
+  },
+  {
+    "id": 37,
+    "character": "Davos",
+    "quote": "Smugglers do not sound warhorns and raise banners. When they smell danger, they raise sail and run before the wind."
+  },
+  {
+    "id": 38,
+    "character": "Cersei Lannister",
+    "quote": "Tears are not a woman's only weapon. You've got another one between your legs, and you'd best learn to use it. You'll find men use their swords freely enough. Both kinds of swords."
+  },
+  {
+    "id": 39,
+    "character": "Cersei Lannister",
+    "quote": "The only way to keep people loyal is to make sure they fear you more than the enemy."
+  },
+  {
+    "id": 40,
+    "character": "Qhorin Halfhand",
+    "quote": "As shy as a maid on her wedding night, and near as fair. Sometimes a man forgets how pretty a fire can be."
   }
 ]
