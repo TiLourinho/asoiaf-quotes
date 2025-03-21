@@ -198,5 +198,125 @@
     "id": 40,
     "character": "Qhorin Halfhand",
     "quote": "As shy as a maid on her wedding night, and near as fair. Sometimes a man forgets how pretty a fire can be."
+  },
+  {
+    "id": 41,
+    "character": "Tywin Lannister",
+    "quote": "Some battles are won with swords and spears, others with quills and ravens."
+  },
+  {
+    "id": 42,
+    "character": "Davos",
+    "quote": "Thirst, hunger, exposure. These were his companions, with him every hour of every day, and he had come to think of them as his friends."
+  },
+  {
+    "id": 43,
+    "character": "Sansa Stark",
+    "quote": "Courtesy is a lady's armor."
+  },
+  {
+    "id": 44,
+    "character": "Daenerys Targaryen",
+    "quote": "It seems to me that a queen who trusts no one is as foolish as a queen who trusts everyone."
+  },
+  {
+    "id": 45,
+    "character": "Daenerys Targaryen",
+    "quote": "One voice may speak you false, but in many there is always truth to be found."
+  },
+  {
+    "id": 46,
+    "character": "Jorah Mormont",
+    "quote": "In the world as I have seen it, no man grows rich by kindness."
+  },
+  {
+    "id": 47,
+    "character": "Bran Stark",
+    "quote": "What good is it to be a skinchanger if you can't wear the skin you like?"
+  },
+  {
+    "id": 48,
+    "character": "Tom Sevenstrings",
+    "quote": "If a song makes a maid want to take off her clothes and feel the good warm sun kiss her skin, why, is that the singer's fault?"
+  },
+  {
+    "id": 49,
+    "character": "Robb Stark",
+    "quote": "A hall is no place for a wolf. He gets restless, you've seen. Growling and snapping. I should have never taken him into battle with me. He's killed far too many men to fear them now."
+  },
+  {
+    "id": 50,
+    "character": "Ygritte",
+    "quote": "You know nothing, Jon Snow."
+  },
+  {
+    "id": 51,
+    "character": "Tormund Giantsbane",
+    "quote": "If a man does not use his member it grows smaller and smaller, until one day he wants to piss and cannot find it."
+  },
+  {
+    "id": 52,
+    "character": "Tywin Lannister",
+    "quote": "The greatest fools are ofttimes more clever than the men who laugh at them."
+  },
+  {
+    "id": 53,
+    "character": "Robb Stark",
+    "quote": "The north remembers."
+  },
+  {
+    "id": 54,
+    "character": "Catelyn Stark",
+    "quote": "Sometimes the best thing you can do is nothing."
+  },
+  {
+    "id": 55,
+    "character": "Bran Stark",
+    "quote": "Sometimes Old Nan would tell the same story she’d told before, but we never minded, if it was a good story. Old stories are like old friends, she used to say. You have to visit them from time to time."
+  },
+  {
+    "id": 56,
+    "character": "Melisandre",
+    "quote": "The night is dark and full of terrors, the day is bright and beautiful and full of hope."
+  },
+  {
+    "id": 57,
+    "character": "Tywin Lannister",
+    "quote": "There is a tool for every task, and a task for every tool."
+  },
+  {
+    "id": 58,
+    "character": "Tyrion Lannister",
+    "quote": "Life would be much simpler if men could fuck themselves, don't you agree?"
+  },
+  {
+    "id": 59,
+    "character": "Ygritte",
+    "quote": "A man can own a woman or a man can own a knife, but no man can own both."
+  },
+  {
+    "id": 60,
+    "character": "Ygritte",
+    "quote": "Men can't own the land no more'n they can own the sea or the sky."
+  },
+  {
+    "id": 61,
+    "character": "Daario Naharis",
+    "quote": "I count no day as lived unless I have loved a woman, slain a foeman, and eaten a fine meal."
+  },
+  {
+    "id": 62,
+    "character": "Tywin Lannister",
+    "quote": "When your enemies defy you, you must serve them steel and fire. When they go to their knees, however, you must help them back to their feet. Elsewise no man will ever bend the knee to you. And any man who must say \"I am the king\" is no king at all."
+  },
+  {
+    "id": 63,
+    "character": "Melisandre",
+    "quote": "An ant who hears the words of a king may not comprehend what he is saying ... If sometimes I have mistaken a warning for a prophecy, or a prophecy for a warning, the fault lies in the reader, not the book."
+  },
+  {
+    "id": 64,
+    "character": "Petyr Baelish",
+    "quote": "In King's Landing, there are two sorts of people: The players and the pieces."
   }
 ]
