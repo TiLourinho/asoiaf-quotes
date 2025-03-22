@@ -318,5 +318,185 @@
     "id": 64,
     "character": "Petyr Baelish",
     "quote": "In King's Landing, there are two sorts of people: The players and the pieces."
+  },
+  {
+    "id": 65,
+    "character": "The Prophet",
+    "quote": "The truth is in our bones, for flesh decays and bone endures."
+  },
+  {
+    "id": 66,
+    "character": "Cersei Lannister",
+    "quote": "When the lion falls the lesser beasts move in."
+  },
+  {
+    "id": 67,
+    "character": "Jon Snow",
+    "quote": "A swordsman should be as good as his sword."
+  },
+  {
+    "id": 68,
+    "character": "Maester Aemon",
+    "quote": "Knowledge is a weapon, Jon. Arm yourself well before you ride forth to battle."
+  },
+  {
+    "id": 69,
+    "character": "Eddard Stark",
+    "quote": "When the cold wind blows the lone wolf dies but the pack survives."
+  },
+  {
+    "id": 70,
+    "character": "Petyr Baelish",
+    "quote": "Men of honor will do things for their children that they would never consider doing for themselves."
+  },
+  {
+    "id": 71,
+    "character": "Kevan Lannister",
+    "quote": "When a dog goes bad, the fault lies with his master."
+  },
+  {
+    "id": 72,
+    "character": "Cersei Lannister",
+    "quote": "A woman may weep, but not a queen."
+  },
+  {
+    "id": 73,
+    "character": "Arianne Martell",
+    "quote": "Fear makes even strong men do things they might never do otherwise."
+  },
+  {
+    "id": 74,
+    "character": "Victarion Greyjoy",
+    "quote": "Every man should lose a battle in his youth, so he does not lose a war when he is old."
+  },
+  {
+    "id": 75,
+    "character": "Petyr Baelish",
+    "quote": "In the game of thrones, even the humblest pieces can have wills of their own. Sometimes they refuse to make the moves you've planned for them. Mark that well, Alayne. It's a lesson that Cersei Lannister still has yet to learn."
+  },
+  {
+    "id": 76,
+    "character": "Maester Aemon",
+    "quote": "In the black of night a man asks all the questions he dares not ask by daylight."
+  },
+  {
+    "id": 77,
+    "character": "The Reaver",
+    "quote": "What a man can do and what he will do are two different things."
+  },
+  {
+    "id": 78,
+    "character": "Euron Greyjoy",
+    "quote": "Only a craven would steal a fruit when he could take the orchard."
+  },
+  {
+    "id": 79,
+    "character": "Daven Lannister",
+    "quote": "You know the best thing about heroes, Jaime? They all die young and leave more women for the rest of us."
+  },
+  {
+    "id": 80,
+    "character": "Genna Lannister Frey",
+    "quote": "Why does a man with one pot of gold need another? Men are greedy."
+  },
+  {
+    "id": 81,
+    "character": "Thoros of Myr",
+    "quote": "Corpses make poor company by night. These were dark and dangerous men, alive. Justice. I remember justice. It had a pleasant taste. Justice was what we were about when Beric led us, or so we told ourselves. We were king’s men, knights, and heroes... but some knights are dark and full of terrors, my lady. War makes monsters of us all."
+  },
+  {
+    "id": 82,
+    "character": "Osney Kettleblack",
+    "quote": "The best lies have some truth in 'em... to give 'em flavor, as it were."
+  },
+  {
+    "id": 83,
+    "character": "Maester Marwyn",
+    "quote": "Gorghon of Old Ghis once wrote that a prophecy is like a treacherous woman. She takes your member in her mouth, and you moan with the pleasure of it and think, how sweet, how fine, how good this is...and then her teeth snap shut and your moans turn to screams. That is the nature of prophecy, said Gorghan. Prophecy will bite your prick off every time."
+  },
+  {
+    "id": 84,
+    "character": "Bran Stark",
+    "quote": "It was better to go hungry than to feast upon a friend."
+  },
+  {
+    "id": 85,
+    "character": "Haldon",
+    "quote": "A book can be as dangerous as a sword in the right hands."
+  },
+  {
+    "id": 86,
+    "character": "Tyrion Lannister",
+    "quote": "Gods and wonders always appear, to attend the birth of kings."
+  },
+  {
+    "id": 87,
+    "character": "Tyrion Lannister",
+    "quote": "You can buy a man with gold, but only blood and steel will keep him true."
+  },
+  {
+    "id": 88,
+    "character": "Davos",
+    "quote": "Kings and corpses always draw attendants."
+  },
+  {
+    "id": 89,
+    "character": "Roose Bolton",
+    "quote": "Get the keys and remove those chains from him, before you make me rue the day I raped your mother."
+  },
+  {
+    "id": 90,
+    "character": "Jojen Reed",
+    "quote": "A reader lives a thousand lives before he dies. The man who never reads lives only one."
+  },
+  {
+    "id": 91,
+    "character": "Lord Brynden",
+    "quote": "Men live their lives trapped in an eternal present, between the mists of memory and the sea of shadow that is all we know of the days to come."
+  },
+  {
+    "id": 92,
+    "character": "Tyrion Lannister",
+    "quote": "It is hard to look a hero when mounted on a pig."
+  },
+  {
+    "id": 93,
+    "character": "Hoster Blackwood",
+    "quote": "Past a certain point, all the dates grow hazy and confused, and the the clarity of history becomes the fog of legend."
+  },
+  {
+    "id": 94,
+    "character": "Jon Snow",
+    "quote": "A fair bargain leaves both sides unhappy, I've heard it said."
+  },
+  {
+    "id": 95,
+    "character": "Tyrion Lannister",
+    "quote": "When men are dying every hour, no one looks too hard at one more dead man."
+  },
+  {
+    "id": 96,
+    "character": "Cersei Lannister",
+    "quote": "Women were always the cruelest where other women were concerned."
+  },
+  {
+    "id": 97,
+    "character": "Barristan Selmy",
+    "quote": "You kill men for the wrongs they have done, not the wrongs that they may do someday."
+  },
+  {
+    "id": 98,
+    "character": "Gerris Drinkwater",
+    "quote": "Men may be fond of maidens, but women like a man who knows what he's about in the bedchamber."
+  },
+  {
+    "id": 99,
+    "character": "Daenerys Targaryen",
+    "quote": "'Men are mad and gods are madder', she told the grass, and the grass murmured its agreement."
+  },
+  {
+    "id": 100,
+    "character": "Grand Maester Pycelle",
+    "quote": "The time to speak of the cold is not when we are standing in it."
   }
 ]
