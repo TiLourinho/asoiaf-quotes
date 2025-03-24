@@ -39,3 +39,13 @@ export function create(quote) {
 
   return newQuote;
 }
+
+export function update(quote) {
+  const updatedQuote = QuoteModel.update(quote);
+
+  if (!updatedQuote) {
+    throw new Error("Error writing quote. Please try again later.");
+  }
+
+  return updatedQuote;
+}

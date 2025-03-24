@@ -7,3 +7,4 @@ quoteRouter.get("/random", QuoteController.getRandom);
 quoteRouter.get("/:id", QuoteController.getById);
 quoteRouter.get("/", QuoteController.getByCharacter);
 quoteRouter.post("/", QuoteController.create);
+quoteRouter.put("/:id", QuoteController.update);

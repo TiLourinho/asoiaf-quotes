@@ -58,3 +58,20 @@ export function create(req, res) {
     return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(error);
   }
 }
+
+export function update(req, res) {
+  const id = Number(req.params.id);
+  const { character, quote } = req.body;
+  const newQuote = { id, character, quote };
+
+  try {
+    const updatedQuote = QuoteService.update(newQuote);
+
+    return res.status(StatusCodes.OK).json(updatedQuote);
+  } catch ({ message }) {
+    const error = { error: message };
+
+    console.error(`Error in update => ${message}`);
+    return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(error);
+  }
+}

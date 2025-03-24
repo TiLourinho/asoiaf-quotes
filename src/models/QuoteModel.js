@@ -3,6 +3,7 @@ import {
   getQuotes,
   getRandomNumber,
   saveQuotes,
+  updateQuotes,
 } from "../utils/tools.js";
 
 export function getRandom() {
@@ -45,5 +46,22 @@ export function create({ character, quote }) {
     return newQuote;
   } catch ({ message }) {
     console.error(`Error trying to create a quote => ${message}`);
+  }
+}
+
+export function update({ id, character, quote }) {
+  const updatedQuote = { id, character, quote };
+  const existingQuote = getById(id);
+
+  if (!existingQuote) {
+    throw new Error("Quote not found!");
+  }
+
+  try {
+    updateQuotes(updatedQuote);
+
+    return updatedQuote;
+  } catch ({ message }) {
+    console.error(`Error trying to update a quote => ${message}`);
   }
 }

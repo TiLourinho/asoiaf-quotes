@@ -35,3 +35,20 @@ export function saveQuotes(quote) {
 
   writeFileSync(QUOTES_PATH, stringfiedData);
 }
+
+export function updateQuotes(quote) {
+  const allQuotes = readQuotes();
+
+  allQuotes.map((item) => {
+    if (item.id === quote.id) {
+      item.id = item.id;
+      item.character = quote.character;
+      item.quote = quote.quote;
+    }
+  });
+
+  const data = [...allQuotes];
+  const stringfiedData = JSON.stringify(data, null, 2);
+
+  writeFileSync(QUOTES_PATH, stringfiedData);
+}
