@@ -75,3 +75,18 @@ export function update(req, res) {
     return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(error);
   }
 }
+
+export function remove(req, res) {
+  const id = Number(req.params.id);
+
+  try {
+    const quote = QuoteService.remove(id);
+
+    return res.status(StatusCodes.OK).json(quote);
+  } catch ({ message }) {
+    const error = { error: message };
+
+    console.error(`Error in remove => ${message}`);
+    return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(error);
+  }
+}

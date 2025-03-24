@@ -49,3 +49,13 @@ export function update(quote) {
 
   return updatedQuote;
 }
+
+export function remove(id) {
+  const quote = QuoteModel.remove(id);
+
+  if (!quote) {
+    throw new Error("Error writing quote. Please try again later.");
+  }
+
+  return quote;
+}

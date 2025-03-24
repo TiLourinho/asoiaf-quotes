@@ -4,6 +4,7 @@ import {
   getRandomNumber,
   saveQuotes,
   updateQuotes,
+  removeQuotes,
 } from "../utils/tools.js";
 
 export function getRandom() {
@@ -63,5 +64,21 @@ export function update({ id, character, quote }) {
     return updatedQuote;
   } catch ({ message }) {
     console.error(`Error trying to update a quote => ${message}`);
+  }
+}
+
+export function remove(id) {
+  const quote = getById(id);
+
+  if (!quote) {
+    throw new Error("Quote not found!");
+  }
+
+  try {
+    removeQuotes(id);
+
+    return quote;
+  } catch ({ message }) {
+    console.error(`Error trying to remove a quote => ${message}`);
   }
 }

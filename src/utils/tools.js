@@ -52,3 +52,13 @@ export function updateQuotes(quote) {
 
   writeFileSync(QUOTES_PATH, stringfiedData);
 }
+
+export function removeQuotes(id) {
+  const allQuotes = readQuotes();
+  const filteredQuotes = allQuotes.filter((item) => item.id !== id);
+
+  const data = [...filteredQuotes];
+  const stringfiedData = JSON.stringify(data, null, 2);
+
+  writeFileSync(QUOTES_PATH, stringfiedData);
+}
