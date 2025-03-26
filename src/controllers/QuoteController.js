@@ -1,9 +1,9 @@
 import * as QuoteService from "../services/QuoteService.js";
 import { StatusCodes } from "http-status-codes";
 
-export function getRandom(_req, res) {
+export async function getRandom(_req, res) {
   try {
-    const quote = QuoteService.getRandom();
+    const quote = await QuoteService.getRandom();
 
     return res.status(StatusCodes.OK).json(quote);
   } catch ({ message }) {
@@ -14,11 +14,11 @@ export function getRandom(_req, res) {
   }
 }
 
-export function getById(req, res) {
+export async function getById(req, res) {
   const id = Number(req.params.id);
 
   try {
-    const quote = QuoteService.getById(id);
+    const quote = await QuoteService.getById(id);
 
     return res.status(StatusCodes.OK).json(quote);
   } catch ({ message }) {
@@ -29,11 +29,11 @@ export function getById(req, res) {
   }
 }
 
-export function getByCharacter(req, res) {
+export async function getByCharacter(req, res) {
   const { character } = req.query;
 
   try {
-    const quote = QuoteService.getByCharacter(character);
+    const quote = await QuoteService.getByCharacter(character);
 
     return res.status(StatusCodes.OK).json(quote);
   } catch ({ message }) {

@@ -1,7 +1,7 @@
 import * as QuoteModel from "../models/QuoteModel.js";
 
-export function getRandom() {
-  const quote = QuoteModel.getRandom();
+export async function getRandom() {
+  const quote = await QuoteModel.getRandom();
 
   if (!quote) {
     throw new Error("Error fetching quote. Please try again later.");
@@ -10,8 +10,8 @@ export function getRandom() {
   return quote;
 }
 
-export function getById(id) {
-  const quote = QuoteModel.getById(id);
+export async function getById(id) {
+  const quote = await QuoteModel.getById(id);
 
   if (!quote) {
     throw new Error("Error fetching quote. Please try again later.");
@@ -20,8 +20,8 @@ export function getById(id) {
   return quote;
 }
 
-export function getByCharacter(character) {
-  const quote = QuoteModel.getByCharacter(character);
+export async function getByCharacter(character) {
+  const quote = await QuoteModel.getByCharacter(character);
 
   if (!quote) {
     throw new Error("Error fetching quote. Please try again later.");

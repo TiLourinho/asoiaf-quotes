@@ -1,20 +1,31 @@
+import db from "../database/connection.js";
 import {
   readQuotes,
-  getQuotes,
   getRandomNumber,
   saveQuotes,
   updateQuotes,
   removeQuotes,
 } from "../utils/tools.js";
 
-export function getRandom() {
-  const quotes = getQuotes();
+async function getAllQuotes() {
+  const query = "SELECT * FROM quotes";
+  const quotes = (await db.query(query)).rows;
+
+  return quotes;
+}
+
+export async function getRandom() {
+  const quotes = await getAllQuotes();
+
+  if (!quotes || quotes.length === 0) {
+    throw new Error("No quotes available.");
+  }
 
   return quotes[getRandomNumber(quotes)];
 }
 
-export function getById(id) {
-  const quotes = getQuotes();
+export async function getById(id) {
+  const quotes = await getAllQuotes();
   const findById = quotes.find((quote) => quote.id === id);
 
   if (!findById) {
@@ -24,8 +35,8 @@ export function getById(id) {
   return findById;
 }
 
-export function getByCharacter(character) {
-  const quotes = getQuotes();
+export async function getByCharacter(character) {
+  const quotes = await getAllQuotes();
   const findByCharacter = quotes.filter(
     (quote) => quote.character === character
   );
