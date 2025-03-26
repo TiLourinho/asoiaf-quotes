@@ -14,6 +14,16 @@ async function getAllQuotes() {
   return quotes;
 }
 
+async function checkQuote(id) {
+  const existingQuote = await getById(id);
+
+  if (existingQuote) {
+    return false;
+  }
+
+  return true;
+}
+
 export async function getRandom() {
   const quotes = await getAllQuotes();
 
@@ -48,48 +58,48 @@ export async function getByCharacter(character) {
   return findByCharacter[getRandomNumber(findByCharacter)];
 }
 
-export function create({ character, quote }) {
-  const id = readQuotes().length + 1;
-  const newQuote = { id, character, quote };
+export async function create({ character, quote }) {
+  const query = `INSERT INTO quotes (character, quote)
+    VALUES ($1, $2) RETURNING id, character, quote`;
+  const newQuote = (await db.query(query, [character, quote])).rows[0];
 
-  try {
-    saveQuotes(newQuote);
-
-    return newQuote;
-  } catch ({ message }) {
-    console.error(`Error trying to create a quote => ${message}`);
+  if (!newQuote) {
+    throw new Error("Quote could not be created!");
   }
+
+  return newQuote;
 }
 
-export function update({ id, character, quote }) {
-  const updatedQuote = { id, character, quote };
-  const existingQuote = getById(id);
+export async function update({ id, character, quote }) {
+  const query = `UPDATE quotes SET character = $1, quote = $2
+    WHERE id = $3 RETURNING id, character, quote`;
 
-  if (!existingQuote) {
+  if (await checkQuote(id)) {
     throw new Error("Quote not found!");
   }
 
-  try {
-    updateQuotes(updatedQuote);
+  const updatedQuote = (await db.query(query, [character, quote, id])).rows[0];
 
-    return updatedQuote;
-  } catch ({ message }) {
-    console.error(`Error trying to update a quote => ${message}`);
+  if (!updatedQuote) {
+    throw new Error("Quote could not be updated!");
   }
+
+  return updatedQuote;
 }
 
-export function remove(id) {
-  const quote = getById(id);
+export async function remove(id) {
+  const query = `DELETE FROM quotes WHERE id = $1
+    RETURNING id, character, quote`;
 
-  if (!quote) {
+  if (await checkQuote(id)) {
     throw new Error("Quote not found!");
   }
 
-  try {
-    removeQuotes(id);
+  const removedQuote = (await db.query(query, [id])).rows[0];
 
-    return quote;
-  } catch ({ message }) {
-    console.error(`Error trying to remove a quote => ${message}`);
+  if (!removedQuote) {
+    throw new Error("Quote could not be removed!");
   }
+
+  return removedQuote;
 }

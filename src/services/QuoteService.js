@@ -30,8 +30,8 @@ export async function getByCharacter(character) {
   return quote;
 }
 
-export function create(quote) {
-  const newQuote = QuoteModel.create(quote);
+export async function create(quote) {
+  const newQuote = await QuoteModel.create(quote);
 
   if (!newQuote) {
     throw new Error("Error writing quote. Please try again later.");
@@ -40,8 +40,8 @@ export function create(quote) {
   return newQuote;
 }
 
-export function update(quote) {
-  const updatedQuote = QuoteModel.update(quote);
+export async function update(quote) {
+  const updatedQuote = await QuoteModel.update(quote);
 
   if (!updatedQuote) {
     throw new Error("Error writing quote. Please try again later.");
@@ -50,12 +50,12 @@ export function update(quote) {
   return updatedQuote;
 }
 
-export function remove(id) {
-  const quote = QuoteModel.remove(id);
+export async function remove(id) {
+  const removedQuote = await QuoteModel.remove(id);
 
-  if (!quote) {
+  if (!removedQuote) {
     throw new Error("Error writing quote. Please try again later.");
   }
 
-  return quote;
+  return removedQuote;
 }

@@ -44,11 +44,11 @@ export async function getByCharacter(req, res) {
   }
 }
 
-export function create(req, res) {
+export async function create(req, res) {
   const quote = req.body;
 
   try {
-    const newQuote = QuoteService.create(quote);
+    const newQuote = await QuoteService.create(quote);
 
     return res.status(StatusCodes.CREATED).json(newQuote);
   } catch ({ message }) {
@@ -59,13 +59,13 @@ export function create(req, res) {
   }
 }
 
-export function update(req, res) {
+export async function update(req, res) {
   const id = Number(req.params.id);
   const { character, quote } = req.body;
   const newQuote = { id, character, quote };
 
   try {
-    const updatedQuote = QuoteService.update(newQuote);
+    const updatedQuote = await QuoteService.update(newQuote);
 
     return res.status(StatusCodes.OK).json(updatedQuote);
   } catch ({ message }) {
@@ -76,11 +76,11 @@ export function update(req, res) {
   }
 }
 
-export function remove(req, res) {
+export async function remove(req, res) {
   const id = Number(req.params.id);
 
   try {
-    const quote = QuoteService.remove(id);
+    const quote = await QuoteService.remove(id);
 
     return res.status(StatusCodes.OK).json(quote);
   } catch ({ message }) {
