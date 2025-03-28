@@ -39,7 +39,7 @@ export async function getRandomByCharacter(character) {
 export async function create(quote) {
   const text = quote.quote;
   const normalizedQuote = text.trim().toLowerCase();
-  const existingQuote = await quoteModel.checkQuote(`%${normalizedQuote}%`);
+  const existingQuote = await quoteModel.checkExistence(`%${normalizedQuote}%`);
 
   if (existingQuote) {
     const message = "This quote already exists in the database";
@@ -60,7 +60,7 @@ export async function create(quote) {
 export async function update(quote) {
   const text = quote.quote;
   const normalizedQuote = text.trim().toLowerCase();
-  const existingQuote = await quoteModel.checkQuote(`%${normalizedQuote}%`);
+  const existingQuote = await quoteModel.checkExistence(`%${normalizedQuote}%`);
 
   if (existingQuote) {
     const message = "This quote already exists in the database";

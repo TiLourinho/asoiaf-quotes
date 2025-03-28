@@ -1,11 +1,12 @@
-import * as QuoteController from "../controllers/QuoteController.js";
 import express from "express";
+
+import * as quoteController from "../controllers/quoteController.js";
 
 export const quoteRouter = express.Router();
 
-quoteRouter.get("/random", QuoteController.getRandom);
-quoteRouter.get("/:id", QuoteController.getById);
-quoteRouter.get("/", QuoteController.getByCharacter);
-quoteRouter.post("/", QuoteController.create);
-quoteRouter.put("/:id", QuoteController.update);
-quoteRouter.delete("/:id", QuoteController.remove);
+quoteRouter.get("/random", quoteController.getRandom);
+quoteRouter.get("/:id", quoteController.getById);
+quoteRouter.get("/", quoteController.getRandomByCharacter);
+quoteRouter.post("/", quoteController.create);
+quoteRouter.put("/:id", quoteController.update);
+quoteRouter.delete("/:id", quoteController.remove);

@@ -75,7 +75,7 @@ export async function update({ id, character, quote }) {
   return updatedQuote;
 }
 
-export async function checkQuote(quote) {
+export async function checkExistence(quote) {
   const query = `
     SELECT id FROM quotes
     WHERE quote ILIKE $1
