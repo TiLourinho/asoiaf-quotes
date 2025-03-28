@@ -75,6 +75,16 @@ export async function update({ id, character, quote }) {
   return updatedQuote;
 }
 
+export async function checkQuote(quote) {
+  const query = `
+    SELECT id FROM quotes
+    WHERE quote ILIKE $1
+    LIMIT 1`;
+  const checkedQuote = (await db.query(query, [quote.trim()])).rows[0];
+
+  return checkedQuote || null;
+}
+
 export async function remove(id) {
   const query = `DELETE FROM quotes WHERE id = $1 RETURNING *`;
   const removedQuote = (await db.query(query, [id])).rows[0];
