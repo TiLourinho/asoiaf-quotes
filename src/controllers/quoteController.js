@@ -14,7 +14,7 @@ export async function getRandom(_req, res, next) {
 }
 
 export async function getById(req, res, next) {
-  const id = Number(req.params.id);
+  const { id } = req.params;
 
   try {
     const quote = await quoteService.getById(id);
@@ -53,7 +53,7 @@ export async function create(req, res, next) {
 }
 
 export async function update(req, res, next) {
-  const id = Number(req.params.id);
+  const { id } = req.params;
   const { character, quote } = req.body;
   const quoteToUpdate = { id, character, quote };
 
@@ -68,7 +68,7 @@ export async function update(req, res, next) {
 }
 
 export async function remove(req, res, next) {
-  const id = Number(req.params.id);
+  const { id } = req.params;
 
   try {
     const removedQuote = await quoteService.remove(id);
