@@ -1,7 +1,7 @@
 import express from "express";
 
 import { quoteRouter } from "./routes/quoteRouter.js";
-import errorMiddleware from "./middlewares/errorMiddleware.js";
+import error from "./middlewares/error.js";
 
 const app = express();
 
@@ -10,6 +10,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/quote", quoteRouter);
 
-app.use(errorMiddleware);
+app.use(error);
 
 export default app;

@@ -5,7 +5,7 @@ import {
   validateParams,
   validateQuery,
   validateBody,
-} from "../middlewares/validationMiddleware.js";
+} from "../middlewares/validation.js";
 
 export const quoteRouter = express.Router();
 
