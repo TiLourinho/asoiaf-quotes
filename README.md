@@ -2,25 +2,71 @@
   <img src="./public/images/asoiaf-logo.png" alt="A Song of Ice and Fire brand logo" width="700px" />
 </p>
 
+<p align="center">
+ <a href="#funcionalidades">Funcionalidades</a> • 
+ <a href="#endpoints">Endpoints</a> • 
+ <a href="#como-executar">Como Executar</a> • 
+ <a href="#autenticação">Autenticação</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#melhorias-futuras">Melhorias</a> • 
+ <a href="#autoria">Autoria</a>
+</p><br>
+
 # A Song of Ice and Fire Quotes
 
-Esta é uma API simples feita em Node.js que fornece citações dos livros _As Crônicas de Gelo e Fogo_. A API permite buscar citações aleatórias, por ID ou por personagem. Todas as citações estão armazenadas em um arquivo `.json`, sem o uso de banco de dados.
+Esta é uma API feita em Node.js que fornece citações da série de livros _As Crônicas de Gelo e Fogo_. A API permite buscar citações aleatórias, por ID ou randômicas por personagem.
 
-## Requisitos
+## Funcionalidades
 
-1. Ter o Node.js instalado no seu ambiente;
-2. Criar um arquivo `quotes.json` onde cada objeto representa uma citação;
-3. Criar um arquivo `server.js` para rodar a API.
+- **CRUD completo** de citações;
+- **Citação aleatória** (ex: `/quote/random`);
+- **Busca por id** (ex: `/quote/:id`);
+- **Busca por personagem** (ex: `/quote?character=tyrion`);
+- **Validação de dados** robusta;
+- **Autenticação simplificada** via senha única.
 
-## Passo a Passo
+## Endpoints
 
-1. Inicialize um projeto Node.js;
-2. Instale o Express.js para facilitar o gerenciamento dos endpoints;
-3. No `server.js`, importe os módulos necessários;
-4. Crie os endpoints:
-   - Obter uma citação aleatória;
-   - Obter uma citação pelo ID;
-   - Obter citações de um personagem;
-   - Adicionar uma nova citação;
-   - Editar uma citação existente;
-   - Deletar uma citação;
+| Método | Endpoint                  | Descrição                                      | Autenticação |
+| ------ | ------------------------- | ---------------------------------------------- | ------------ |
+| GET    | `/quote/random`           | Retorna uma citação aleatória                  | ❌           |
+| GET    | `/quote/:id`              | Retorna uma citação específica                 | ❌           |
+| GET    | `/quote?character={nome}` | Retorna uma citação randômica de um personagem | ❌           |
+| POST   | `/quote`                  | Adiciona nova citação                          | ✅           |
+| PUT    | `/quote/:id`              | Atualiza uma citação                           | ✅           |
+| DELETE | `/quote/:id`              | Remove uma citação                             | ✅           |
+
+## Como Executar
+
+```Bash
+# Clone o repositório
+$ git clone https://github.com/TiLourinho/asoiaf-quotes.git
+
+# Instale as dependências
+$ npm install
+
+# Configure o .env (copie o exemplo)
+$ cp .env.example .env
+
+# Inicie o servidor
+$ npm start
+```
+
+### Variáveis de ambiente
+
+```Bash
+# Node.js server
+PORT=4000
+
+# Postgres-WSL connection
+HOST="localhost"
+USER="seu_user"
+PASSWORD=sua_senha
+DATABASE="asoiaf"
+DBPORT=5432
+
+# Postgres-Docker connection
+POSTGRES_USER=seu_user
+POSTGRES_PASSWORD=sua_senha
+POSTGRES_DB=asoiaf
+```
