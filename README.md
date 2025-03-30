@@ -8,7 +8,6 @@
  <a href="#como-executar">Como Executar</a> • 
  <a href="#autenticação">Autenticação</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
- <a href="#melhorias-futuras">Melhorias</a> • 
  <a href="#autoria">Autoria</a>
 </p><br>
 
@@ -35,6 +34,7 @@ Esta é uma API feita em Node.js que fornece citações da série de livros _As 
 | POST   | `/quote`                  | Adiciona nova citação                          | ✅           |
 | PUT    | `/quote/:id`              | Atualiza uma citação                           | ✅           |
 | DELETE | `/quote/:id`              | Remove uma citação                             | ✅           |
+| POST   | `/auth/login`             | Gera um token de autenticação                  | ❌           |
 
 ## Como Executar
 
@@ -54,7 +54,7 @@ $ npm start
 
 ### Variáveis de ambiente
 
-```Bash
+```Ini
 # Node.js server
 PORT=4000
 
@@ -69,4 +69,39 @@ DBPORT=5432
 POSTGRES_USER=seu_user
 POSTGRES_PASSWORD=sua_senha
 POSTGRES_DB=asoiaf
+
+# Password for protected routes
+API_PASSWORD=sua_senha_para_a_api
+JWT_SECRET=sua_chave_secreta
 ```
+
+## Autenticação
+
+Rotas protegidas exigem um token JWT no header:
+
+```Http
+Authorization: Bearer <token>
+```
+
+Como obter o token:
+
+```Bash
+curl -X POST http://localhost:4000/login \
+  -H "Content-Type: application/json" \
+  -d '{"password":"sua_senha_para_a_api"}'
+```
+
+## Tecnologias
+
+- [Node.js](https://nodejs.org/pt)
+- [Express](https://expressjs.com/pt-br/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [JWT](https://jwt.io/)
+- [Joi](https://joi.dev/)
+- [Dotenv](https://github.com/motdotla/dotenv)
+
+## Autoria
+
+Tiago Lourinho
+
+[![Gmail Badge](https://img.shields.io/badge/-lourinho.tiago@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:lourinho.tiago@gmail.com)](mailto:lourinho.tiago@gmail.com)
