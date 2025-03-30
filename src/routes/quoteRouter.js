@@ -6,12 +6,13 @@ import {
   validateQuery,
   validateBody,
 } from "../middlewares/validation.js";
+import { authUser } from "../middlewares/auth.js";
 
 export const quoteRouter = express.Router();
 
 quoteRouter.get("/random", quoteController.getRandom);
 quoteRouter.get("/:id", validateParams, quoteController.getById);
 quoteRouter.get("/", validateQuery, quoteController.getRandomByCharacter);
-quoteRouter.post("/", validateBody, quoteController.create);
-quoteRouter.put("/:id", validateParams, quoteController.update);
-quoteRouter.delete("/:id", validateParams, quoteController.remove);
+quoteRouter.post("/", authUser, validateBody, quoteController.create);
+quoteRouter.put("/:id", authUser, validateParams, quoteController.update);
+quoteRouter.delete("/:id", authUser, validateParams, quoteController.remove);
